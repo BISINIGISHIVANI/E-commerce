@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+    <link rel="stylesheet" href="/component/home/home.css">
+    <link rel="stylesheet" href="filter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="docnav-bar flex-center">
+        <div class="flex-center nav-title nav-rflex margin-edge-items cursor-pointer">
+            <h1 class="title-firstword">Fly <span class="title-secondword">Buy</span></h1>
+        </div>
+        <div class="flex-center">
+            <input type="search" placeholder="search here..." class="border-searchbox search-input">
+            <button class="search-go border-searchbox cursor-pointer">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <div class="login-btn">
+            <button class="login-site cursor-pointer">
+                Login
+            </button>
+        </div>
+        <div class="wish-list margin-edge-items flex-center">
+            <div class="wishlist-btn">
+                <span class="nav-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </span>
+                <div class="nav-wishlist-count wishlist-items">
+                    <span>0</span>
+                </div>
+            </div>
+        </div>
+        <div class="nav-cart-container  margin-edge-items">
+            <div class="nav-center flex-center">
+                <div class="cart-btn">
+                    <span class="nav-icon">
+                        <i class="fa-brands fa-opencart"></i>
+                    </span>
+                    <div class="nav-cart-count cart-items">
+                        <span>0</span>
+                    </div>
+                </div>
+                <span class="cart-name">Cart</span>
+            </div>
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="hero-slide1 hero-slides">
+            <div class="banner1">
+                <h1 class="banner-title1">women trendy collection</h1>
+                <button class="banner-btn1 cursor-pointer">shop now</button>
+            </div>
+        </div>
+    </header>
+    <div class="filter-page">
+        <!-- section for filter-->
+            <section class="filter-product-container">
+
+                <!-- Filter Container -->
+                <div class="filter-container">
+                    <div class="filter-title">
+                        <h2 class="filter-heading">Filters</h2>
+                        <button class="clear-btn">Clear</button>
+                    </div>
+    
+                    <!-- Range Slider Filter -->
+                    <div class="filter-type">
+                        <h3 class="filter-type-h3">Price</h3>
+                        <div class="filter-type-container">
+                            <label for="slider">₹0 - ₹10000</label>
+                            <input type="range" min="0" max="10000" value="5000" class="slider">
+                        </div>
+                    </div>
+    
+                    <!-- Sort By Prices Filter -->
+                    <div class="filter-type">
+                        <h3 class="filter-type-h3">Sort by</h3>
+                        <div class="filter-type-container">
+                            <input type="radio" class="low-high">
+                            <label for="low-high">Price - Low to High</label>
+                        </div>
+                        <div class="filter-type-container">
+                            <input type="radio" class="high-low">
+                            <label for="high-low">Price - High to Low</label>
+                        </div>
+                    </div>
+    
+                    <!-- Category Filter -->
+                    <div class="filter-type">
+                        <h3 class="filter-type-h3">Category</h3>
+                        <div class="filter-type-container">
+                            <input type="checkbox" class="solid-Jacket">
+                            <label for="solid-Jacket">Bomber Solid Jacket</label>
+                        </div>
+                        <div class="filter-type-container">
+                            <input type="checkbox" class="Thin-Jacket">
+                            <label for="Thin-Jacket">Bomber Thin Jacket</label>
+                        </div>
+                        <div class="filter-type-container">
+                            <input type="checkbox" class="Lightweight-Jacket">
+                            <label for="Lightweight-Jacket">Bomber Light weight Jacket</label>
+                        </div>
+                    </div>
+    
+                    <!-- Rating Filter -->
+                    <div class="filter-type">
+                        <h3 class="filter-type-heading">Rating</h3>
+                        <div class="filter-type-container">
+                            <input type="radio" class="four-star">
+                            <label for="four-star">4 stars & above</label>
+                        </div>
+                        <div class="filter-type-container">
+                            <input type="radio" class="three-star">
+                            <label for="three-star">3 stars & above</label>
+                        </div>
+                        <div class="filter-type-container">
+                            <input type="radio" class="two-star">
+                            <label for="two-star">2 stars & above</label>
+                        </div>
+                        <div class="filter-type-container">
+                            <input type="radio" class="one-star">
+                            <label for="one-star">1 stars & above</label>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="products">
+            <div class="section-title">
+                <h2>our products</h2>
+            </div>
+            <div class="products-center">
+                <article class="product">
+                    <div class="img-container">
+                        <img src="/img-1/product-1.webp" alt="product" class="product-img" />
+                        <button class="bag-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            add to bag
+                        </button>
+                        <button class="bag-wishlist"><i class="fa-solid fa-heart"></i>ADD To wishlist</button>
+                    </div>
+                    <h3>Mast & Harbour</h3>
+                    <h5>Women Blue Solid Bomber Jacket</h5>
+                    <h4>Rs.2699</h4>
+                </article>
+                <article class="product">
+                    <div class="img-container">
+                        <img src="/img-1/product-2.webp" alt="product" class="product-img" />
+                        <button class="bag-btn bag-btn-2">GO TO CART</button>
+                        <button class="bag-wishlist"><i class="fa-solid fa-heart"></i>ADD To wishlist</button>
+                    </div>
+                    <h3>Mast & Harbour</h3>
+                    <h5>Women Blue Solid Bomber Jacket</h5>
+                    <h4>Rs.2699</h4>
+                </article>
+                <article class="product">
+                    <div class="img-container">
+                        <img src="/img-1/product-1.webp" alt="product" class="product-img" />
+                        <button class="bag-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            add to bag
+                        </button>
+                        <button class="bag-wishlist"><i class="fa-solid fa-heart"></i>ADD To wishlist</button>
+                    </div>
+                    <h3>Mast & Harbour</h3>
+                    <h5>Women Blue Solid Bomber Jacket</h5>
+                    <h4>Rs.2699</h4>
+                </article>
+                <article class="product">
+                    <div class="img-container">
+                        <img src="/img-1/product-2.webp" alt="product" class="product-img" />
+                        <button class="bag-btn bag-btn-2">GO TO CART</button>
+                        <button class="bag-wishlist"><i class="fa-solid fa-heart"></i>ADD To wishlist</button>
+                    </div>
+                    <h3>Mast & Harbour</h3>
+                    <h5>Women Blue Solid Bomber Jacket</h5>
+                    <h4>Rs.2699</h4>
+                </article>
+                <article class="product">
+                    <div class="img-container">
+                        <img src="/img-1/product-1.webp" alt="product" class="product-img" />
+                        <button class="bag-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            add to bag
+                        </button>
+                        <button class="bag-wishlist"><i class="fa-solid fa-heart"></i>ADD To wishlist</button>
+                    </div>
+                    <h3>Mast & Harbour</h3>
+                    <h5>Women Blue Solid Bomber Jacket</h5>
+                    <h4>Rs.2699</h4>
+                </article>
+                <article class="product">
+                    <div class="img-container">
+                        <img src="/img-1/product-2.webp" alt="product" class="product-img" />
+                        <button class="bag-btn bag-btn-2">GO TO CART</button>
+                        <button class="bag-wishlist"><i class="fa-solid fa-heart"></i>ADD To wishlist</button>
+                    </div>
+                    <h3>Mast & Harbour</h3>
+                    <h5>Women Blue Solid Bomber Jacket</h5>
+                    <h4>Rs.2699</h4>
+                </article>
+        </section>
+    </div>
+    
+</body>
+
+</html>
