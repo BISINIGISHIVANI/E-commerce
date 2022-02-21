@@ -1,21 +1,28 @@
 .loginbox-align{
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .login-box {
     width: 25rem;
-    padding: 3rem;
-    background: #7195a3;
+    padding: 2rem;
+    background: var(--main-bg);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
     border-radius: 10px;
 }
 
-.login-box h2 {
+.login-box h2{
     color: #fff;
     text-align: center;
+    padding: 1rem 0;
+}
+.login-box h4{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+
 }
 
 .login-box .user-box {
@@ -34,6 +41,10 @@
     background: transparent;
     transition: 0.5s;
 }
+.form-terms{
+    color: var(--primaryColor);
+    padding-bottom: 1rem;
+}
 
 .login-box .user-box label {
     position: absolute;
@@ -50,15 +61,26 @@
 .login-box .user-box input:valid~label {
     top: -1.6rem;
     left: 0;
-    color: #a7f1db;
+    color: #fff;
     font-size: 18px;
 }
-
-.login-submit {
+.signup-btn {
+    cursor: pointer;
     text-decoration: none;
     font-size: 1.3rem;
-    color: rgb(13, 13, 14);
-    font-weight: 800;
+    color: #fff;
+    background: var(--primaryColor);
+    font-weight: 600;
     border: 1px solid lightblue;
-    padding: 8px;
+    padding: 4px;
+    width:100%;
+}
+.already-account{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--primaryColor);
+    padding:8px 0;
+    font-size: 1.2rem;
 }
