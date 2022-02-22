@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="/component/home/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="docnav-bar flex-center">
+        <div class="flex-center nav-title nav-rflex margin-edge-items cursor-pointer">
+            <h1 class="title-firstword"onClick="location.href='/index.html'">Fly <span class="title-secondword">Buy</span></h1>
+        </div>
+        <div class="flex-center">
+            <input type="search" placeholder="search here..." class="border-searchbox search-input">
+            <button class="search-go border-searchbox cursor-pointer">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <div class="login-btn">
+            <button class="login-site cursor-pointer"onClick="location.href='/component/Authentication/login/index.html'">
+                Login
+            </button>
+        </div>
+        <div class="wish-list margin-edge-items flex-center">
+            <div class="wishlist-btn">
+                <span class="nav-icon"onClick="location.href='/component/wishlist-management/wishlist.html'">
+                    <i class="fa-solid fa-heart"></i>
+                </span>
+                <div class="nav-wishlist-count wishlist-items">
+                    <span>0</span>
+                </div>
+            </div>
+        </div> 
+        <div class="nav-cart-container  margin-edge-items">
+            <div class="nav-center flex-center">
+                <div class="cart-btn">
+                    <span class="nav-icon"onClick="location.href='./cart.html'">
+                        <i class="fa-brands fa-opencart"></i>
+                    </span>
+                    <div class="nav-cart-count cart-items">
+                        <span>0</span>
+                    </div>
+                </div>
+                <span class="cart-name">Cart</span>
+            </div>
+        </div>
+    </nav>
+    <div class="cart">
+        <h2>your cart(2)</h2>
+        <div class="cart-content">
+            <!-- cart item -->
+            <div class="cart-item">
+                <img src="/img-1/product-2.webp" alt="product" />
+                <div>
+                    <h3>Mast & Harbour</h3>
+                    <h5>Women Blue Solid Bomber Jacket</h5>
+                    <h4>Rs.2699<span><del><small>Rs.3600</small></del></span></h4>
+                    <div class="percent">
+                        <span>50% off</span>
+                    </div>
+                    <div class="btn-yourcart">
+                        <button class="remove-cart-btn">
+                            remove from cart
+                        </button>
+                        <button class="move-wishlist-btn">
+                            move to wishlist
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <span class="increment">+</span>
+                    <p class="item-amount">
+                        1
+                    </p>
+                    <span class="decrement">─</span>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="/img-1/product-2.webp" alt="product" />
+                <div>
+                    <h3>Mast & Harbour</h3>
+                    <h5>Women Blue Solid Bomber Jacket</h5>
+                    <h4>Rs.2000<span><del><small>Rs.3999</small></del></span></h4>
+                    <div class="percent">
+                        <span>50% off</span>
+                    </div>
+                    <div class="btn-yourcart">
+                        <button class="remove-cart-btn">
+                            remove from cart
+                        </button>
+                        <button class="move-wishlist-btn">
+                            move to wishlist
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <span class="increment">+</span>
+                    <p class="item-amount">
+                        1
+                    </p>
+                    <span class="decrement">─</span>
+                </div>
+            </div>
+            <!-- cart item -->
+        </div>
+        <div class="cart-footer">
+            <h3>Price details</h3>
+            <hr>
+            <div class="price-data">
+                <div>
+                    <span>Price(2 items)</span>
+                    <span>Rs.2699</span>
+                </div>
+                <div>
+                    <span>Disount</span>
+                    <span>Rs.-1999</span>
+                </div>
+                <div>
+                    <span>Delivery Charges</span>
+                    <span>Rs.499</span>
+                </div>
+
+            </div>
+            <hr>
+            <h3>your total :Rs.<span class="cart-total">3499</span></h3>
+            <hr>
+            <p class="savings">you will save Rs.1999 on this order</p>
+            <button class="clear-cart banner-btn1">clear cart</button>
+            <button class="place-order banner-btn1">place-order</button>
+        </div>
+    </div>
+    </div>
+    <!-- end of cart -->
+</body>
+
+</html>

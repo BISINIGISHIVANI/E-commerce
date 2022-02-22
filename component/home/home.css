@@ -29,6 +29,7 @@ body {
   height: 4.5rem;
   width: 100%;
   margin-left: 0 auto;
+  margin-bottom: 3rem;
   justify-content: space-evenly;
   z-index: 1;
 }
@@ -255,4 +256,30 @@ body {
   letter-spacing: var(--mainSpacing);
   color: var(--primaryColor);
   text-align: center;
+}
+/* responsive navbar  */
+@media screen and (max-width:450px) {
+  .docnav-bar{
+    height: 9rem;
+  }
+  .hero-slides{
+    min-height:calc(100vh-9rem);
+  }
+  .loginbox-align{
+    top:70%;
+  }
+  .cart{
+    top:9rem;
+  }
+  .cart-item img {
+    width: 8rem;
+    height: 8rem;
+  }
+  .cart-item div{
+    width:fit-content;
+  }
+  .banner-btn1{
+    padding: 0.5rem;
+    margin-bottom:3rem;
+  }
 }
