@@ -7,15 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logout page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="logout">
-        <a class="logout-btn" href="#">
-            <img class="logout-img"
-                src="https://picsum.photos/200">
-            <div class="logout-label">LOGOUT</div>
-        </a>
-    </div>
+    <nav class="docnav-bar flex-center">
+        <div class="flex-center nav-title nav-rflex margin-edge-items cursor-pointer">
+            <h1 class="title-firstword"onClick="location.href='/index.html'">Fly <span class="title-secondword">Buy</span></h1>
+        </div>
+        <div class="flex-center">
+            <input type="search"placeholder="search here..."class="border-searchbox search-input">
+            <button class="search-go border-searchbox cursor-pointer">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <div class="wish-list margin-edge-items flex-center">
+            <div class="wishlist-btn">
+                <span class="nav-icon"onClick="location.href='/component/wishlist-management/wishlist.html'">
+                    <i class="fa-solid fa-heart"></i>
+                </span>
+                <div class="nav-wishlist-count wishlist-items">
+                    <span>0</span>
+                </div>
+            </div>
+        </div>
+        <div class="nav-cart-container  margin-edge-items">
+            <div class="nav-center flex-center">
+                <div class="cart-btn">
+                    <span class="nav-icon">
+                        <i class="fa-brands fa-opencart"></i>
+                    </span>
+                    <div class="nav-cart-count cart-items">
+                        <span>0</span>
+                    </div>
+                </div>
+                <span class="cart-name">Cart</span>
+            </div>
+        </div>
+        <div class="logout">
+            <a class="logout-btn" href="/component/Authentication/login/index.html">
+                <img class="logout-img"
+                    src="https://picsum.photos/200">
+                <div class="logout-label">LOGOUT</div>
+            </a>
+        </div>
+    </nav>
+    
 </body>
 </html>
