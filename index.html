@@ -12,7 +12,7 @@
 <body>
         <nav class="docnav-bar flex-center">
             <div class="flex-center nav-title nav-rflex margin-edge-items cursor-pointer">
-                <h1 class="title-firstword"onClick="location.href='/index.html'">Fly <span class="title-secondword">Buy</span></h1>
+                <h1 class="title-firstword">Fly <span class="title-secondword">Buy</span></h1>
             </div>
             <div class="flex-center">
                 <input type="search"placeholder="search here..."class="border-searchbox search-input">
@@ -21,12 +21,13 @@
                 </button>
             </div>
             <div class="login-btn">
-                <button class="login-site cursor-pointer"onClick="location.href='/component/Authentication/login/index.html'"> Login
+                <button class="login-site cursor-pointer"><a href="./component/Authentication/login/index.html"> Login
+                </a>
                 </button>
             </div>
             <div class="wish-list margin-edge-items flex-center">
                 <div class="wishlist-btn">
-                    <span class="nav-icon"onClick="location.href='/component/wishlist-management/wishlist.html'">
+                    <span class="nav-icon">
                         <i class="fa-solid fa-heart"></i>
                     </span>
                     <div class="nav-wishlist-count wishlist-items">
@@ -37,7 +38,7 @@
             <div class="nav-cart-container  margin-edge-items">
                 <div class="nav-center flex-center">
                     <div class="cart-btn">
-                        <span class="nav-icon"onClick="location.href='/component/cart-management/cart.html'">
+                        <span class="nav-icon">
                             <i class="fa-brands fa-opencart"></i>
                         </span>
                         <div class="nav-cart-count cart-items">
@@ -52,8 +53,8 @@
             <div class="hero-slide1 hero-slides">
                 <div class="banner1">
                     <h1 class="banner-title1">women wear collection</h1>
-                    <button class="banner-btn1 cursor-pointer"onClick="location.href='/component/product-list/product.html'">shop now</button>
-                </div><a href=""></a>
+                    <button class="banner-btn1 cursor-pointer"><a href="/component/product-with-filter/filter.html">shop now</a></button>
+                </div>
             </div>
         </header>
         <section class="products">
@@ -78,10 +79,7 @@
                 <article class="product">
                     <div class="img-container">
                         <img src="/img-1/product-2.webp" alt="product" class="product-img" />
-                        <button class="bag-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                            add to bag
-                        </button>
+                        <button class="bag-btn">ADD TO CART</button>
                         <button class="bag-wishlist"><i class="fa-solid fa-heart"></i>ADD To wishlist</button>
                     </div>
                     <h3>Mast & Harbour</h3>

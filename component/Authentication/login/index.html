@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/component/home/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
         <nav class="docnav-bar flex-center">
             <div class="flex-center nav-title nav-rflex margin-edge-items cursor-pointer">
-                <h1 class="title-firstword"onClick="location.href='/index.html'">Fly <span class="title-secondword">Buy</span></h1>
+                <h1 class="title-firstword">Fly <span class="title-secondword">Buy</span></h1>
             </div>
             <div class="flex-center">
                 <input type="search"placeholder="search here..."class="border-searchbox search-input">
@@ -20,13 +21,13 @@
                 </button>
             </div>
             <div class="login-btn">
-                <button class="login-site cursor-pointer"onClick="location.href='/component/Authentication/login/index.html'">
+                <button class="login-site cursor-pointer">
                     Login
                 </button>
             </div>
             <div class="wish-list margin-edge-items flex-center">
                 <div class="wishlist-btn">
-                    <span class="nav-icon"onClick="location.href='/component/wishlist-management/wishlist.html'">
+                    <span class="nav-icon">
                         <i class="fa-solid fa-heart"></i>
                     </span>
                     <div class="nav-wishlist-count wishlist-items">
@@ -51,7 +52,7 @@
         <div class="loginbox-align">
             <div class="login-box">
               <h2>Login</h2>
-              <div>
+              <form>
                 <div class="user-box">
                   <input type="email" name="useremail">
                   <label>Email address </label>
@@ -73,10 +74,11 @@
                   <button type="submit"class="login-submit">
                     Login
                   </button>
-                  <button class="create-account"onClick="location.href='/component/Authentication/Signup/index.html'">Create New Account ></button>
+                  <button class="create-account">Create New Account ></button>
                 </div>
-              </div>
+                
+            </form>
           </div>
-        </div>
+          </div>
 </body>
 </html>
