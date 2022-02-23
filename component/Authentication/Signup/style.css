@@ -1,3 +1,4 @@
+@import url('/component/home/home.css');
 .loginbox-align{
     position: absolute;
     top: 55%;
@@ -84,3 +85,14 @@
     padding:8px 0;
     font-size: 1.2rem;
 }
+@media screen and (max-width:450px){
+    .docnav-bar{
+      height:9rem;
+    }
+    .loginbox-align{
+     top:85%;
+    }
+    .login-box{
+      width:23rem;
+    }
+  }

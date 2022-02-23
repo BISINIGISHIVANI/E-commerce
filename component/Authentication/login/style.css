@@ -189,4 +189,14 @@
 	border-radius: 0 10px 10px 0;
   }
   /* nav bar ends */
- 
+  @media screen and (max-width:450px){
+    .docnav-bar{
+      height:9rem;
+    }
+    .loginbox-align{
+     top:75%;
+    }
+    .login-box{
+      width:23rem;
+    }
+  }

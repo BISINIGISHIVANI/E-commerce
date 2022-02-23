@@ -256,3 +256,9 @@ body {
   color: var(--primaryColor);
   text-align: center;
 }
+/* / responsive navbar  */
+@media screen and (max-width:450px) {
+  .docnav-bar{
+    height: 9rem;
+  }
+}

@@ -111,4 +111,20 @@
 
   
   /* --------------- End of Cart ---------------- */
- 
+  @media screen and (max-width:450px){
+    .cart {
+      top:9rem;
+    }
+    .cart-item img{
+      width:8rem;
+      height:8rem;
+    }
+    .cart-item div{
+      width:90%;
+    }
+    .banner-btn1{
+      width:230px;
+      margin-bottom:4rem;
+    }
+
+  }
