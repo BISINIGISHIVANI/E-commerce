@@ -1,63 +1,202 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+:root{
+    --primaryColor: #1276a5;
+    --secondaryColor:#cf443f;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainGrey: #ececec;
+    --mainSpacing: 0.1rem;
+    --main-bg:#043044;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Lato", sans-serif;
+  }
+/* login  */
 .loginbox-align{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .login-box {
-    width: 25rem;
-    padding: 3rem;
-    background: #7195a3;
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
-    border-radius: 10px;
+  width: 25rem;
+  padding: 3rem;
+  background:var(--main-bg);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+  border-radius: 10px;
 }
 
 .login-box h2 {
-    color: #fff;
-    text-align: center;
+  padding-bottom: 1.3rem;
+  color: #fff;
+  text-align: center;
 }
 
 .login-box .user-box {
-    position: relative;
+  position: relative;
 }
 
 .login-box .user-box input {
-    width: 100%;
-    padding: 12px 0;
-    font-size: 1.3rem;
-    color: #fff;
-    margin-bottom: 2.5rem;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;
-    transition: 0.5s;
+  width: 100%;
+  padding: 12px 0;
+  font-size: 1.3rem;
+  color:var(--mainWhite);
+  margin-bottom: 2.5rem;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  transition: 0.5s;
 }
 
 .login-box .user-box label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 12px 0;
-    font-size: 1.3rem;
-    color: #fff;
-    pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 12px 0;
+  font-size: 1.3rem;
+  color: var(--mainWhite);
+  pointer-events: none;
 }
 
 .login-box .user-box input:focus~label,
 .login-box .user-box input:valid~label {
-    top: -1.6rem;
-    left: 0;
-    color: #a7f1db;
-    font-size: 18px;
+  top: -1.6rem;
+  left: 0;
+  color: var(--mainGrey);
+  font-size: 18px;
 }
-
+.password-box{
+  color:var(--mainWhite);
+  display: flex;
+  flex-direction:column;
+  gap:1rem;
+  font-size: 1.2rem;
+}
+.div-inline{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.forgot-pwd{
+  color:var(--primaryColor);
+  cursor: pointer;
+}
 .login-submit {
-    text-decoration: none;
-    font-size: 1.3rem;
-    color: rgb(13, 13, 14);
-    font-weight: 800;
-    border: 1px solid lightblue;
-    padding: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: var(--mainWhite);
+  background: var(--primaryColor);
+  font-weight: 600;
+  border: 1px solid lightblue;
+  padding: 4px;
 }
+.create-account{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--primaryColor);
+  font-size: 1.2rem;
+}
+  /* navbar starts */
+
+  .docnav-bar {
+	background: var(--main-bg);
+    color: var(--mainWhite);
+    position: sticky;
+    top: 0;
+    height: 4.5rem;
+    width: 100%;
+	margin-left: 0 auto;
+    justify-content:space-evenly;
+    z-index: 1;
+  }
+  .flex-center{
+	display: flex;
+	place-items: center center;
+	flex-wrap: wrap;
+  }
+  .nav-icon{
+	  font-size: 1.4rem;
+  }
+
+  .title-firstword{
+    color: var(--primaryColor);
+  }
+  .title-secondword{
+    color: var(--secondaryColor);
+  }
+  .nav-title{
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	padding:0 1rem;
+  }
+ .navbar h1:hover{
+    border:1px solid black;
+    padding:8px;
+ }
+ .cart-btn,.wishlist-btn{
+    position: relative;
+    cursor: pointer;
+  }
+  .cart-items,.wishlist-items{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: var(--primaryColor);
+    padding: 0 5px;
+    border-radius: 30%;
+    color: var(--mainWhite);
+  }
+  .cart-name{
+    margin-top: 0.6rem;
+    margin-left:0.2rem;
+	font-size: 1rem;
+  }
+  .cursor-pointer{
+    cursor: pointer;
+  }
+  .margin-edge-items{
+    margin:0 0.9rem;
+  }
+  .login-site{
+	background: var(--primaryColor);
+	color: var(--mainWhite);
+	font-size: 1.2rem;
+	padding:7px;
+  }
+  .search-input[type="search"]{
+	  border-radius: 10px 0 0 10px;
+  }
+  .border-searchbox{
+	padding:7px;
+	border: none;
+	outline: none;
+	font-size: 1.3rem;
+  }
+  .search-go{
+	background: var(--secondaryColor);
+	color: var(--main-bg);
+	border-radius: 0 10px 10px 0;
+  }
+  /* nav bar ends */
+  @media screen and (max-width:450px){
+    .docnav-bar{
+      height:9rem;
+    }
+    .loginbox-align{
+     top:75%;
+    }
+    .login-box{
+      width:23rem;
+    }
+  }
