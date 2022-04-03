@@ -116,12 +116,15 @@ body {
   color: var(--main-bg);
   border-radius: 0 10px 10px 0;
 }
+.link-page{
+  text-decoration: none;
+  color:var(--mainWhite);
+}
 
 /* nav bar ends */
 /* hero  */
 .hero-slides {
   min-height: 30rem;
-  min-height: calc(100vh-4.5rem);
   display: flex;
   align-items: center;
   justify-content: center;
