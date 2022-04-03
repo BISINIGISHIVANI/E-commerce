@@ -188,6 +188,9 @@
 	color: var(--main-bg);
 	border-radius: 0 10px 10px 0;
   }
+  .link-page{
+    text-decoration: none;
+  }
   /* nav bar ends */
   @media screen and (max-width:450px){
     .docnav-bar{
